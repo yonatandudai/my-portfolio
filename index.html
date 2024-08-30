@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Yonatan Dudai
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jdoe@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="to<pdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/IMG_1617 copy.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, my name is Yonatan Dudai <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I'm a highly motivated BSc Computer Science graduate specializing in Bioinformatics at Ben-Gurion University.<br>
+            I have strong programming skills in Python, Java, C, C++, HTML, CSS and JavaScript.
+            My academic background includes advanced algorithm design, dynamic programming, server-client architecture, and data analysis techniques.
+            Additionally, I bring practical experience as a data analyst, where I applied MongoDB and SQL for data extraction,
+            statistical analysis, and reporting.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>practical experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png"/>
+          <h6>CSS</h6>
+          <p>practical experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>practical experience</p>
+        </div>
+        
+        <div class="skill">
+          <img src="html_finalprojimages/java.png"/>
+          <h6>Java</h6>
+          <p>practical experience</p>
+        </div>
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>RNA Structure Prediction</h3>
+            <ul>
+              <li>Implementation of Nussinov-Jacobson algorithm that predicts RNA secondary structures, emphasizing dynamic programming techniques.
+                Comparing results with Mfold and experimental data</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Gene Patterns Comparison</h3>
+            <ul>
+              <li>Development of a pipeline to compare gene patterns across large datasets.
+                Implementation of algorithm to identify conserved patterns and creating a scoring system to quantify differences between different datasets.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Tel Aviv Walking routes Network analysis using QGIS</h3>
+            <ul>
+              <li>Network analysis and optimization of Tel Aviv walking routes using QGIS.
+                Built a street network graph and calculated shortest paths between given points using Dijkstra's algorithm</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Yonatan is a highly skilled programmer with a deep understanding of bioinformatics and data analysis.
+          His work on optimizing complex algorithms for gene pattern analysis was particularly impressive,
+          showcasing both his technical expertise and innovative thinking.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Yonatan’s ability to translate complex data into actionable insights is unmatched.
+          During our time together at UVeye, he consistently delivered high-quality statistical reports that were crucial to our clients’
+          decision-making processes.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had the pleasure of working with Yonatan on a network analysis project, and his proficiency in Python and GIS tools stood out.
+          His attention to detail and problem-solving skills were key to the project’s success, especially in optimizing the shortest path algorithms.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
